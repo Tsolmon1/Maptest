@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.michaldrabik.tapbarmenulib.TapBarMenu
+            android:id="@+id/tapBarMenu"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@id/mapView"
+            android:layout_gravity="top"
+            android:layout_marginBottom="5dp"
+            android:paddingBottom="5dp"
+
+            app:tbm_backgroundColor="@color/mapboxBlue"
+            app:tbm_buttonPosition="left"
+            app:tbm_menuAnchor="top">
+            <GridLayout
+                android:id="@+id/fragment1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="80dp"
+
+                android:layout_weight="8"
+                android:rowCount="2"
+                android:columnCount="3">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/item1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_location"
+                        />
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+
+                        android:layout_marginTop="25dp"
+                        android:text="Байршил"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/mapboxWhite"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:visibility="visible"
+                        tools:text="Санал" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/item2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:src="@drawable/round_description_black_18dp" />
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+
+                        android:layout_marginTop="25dp"
+                        android:text="Мэдээлэл"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/mapboxWhite"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:visibility="visible"
+                        tools:text="Санал" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/item3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:src="@drawable/round_info_black_18dp"
+                        />
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+
+                        android:layout_marginTop="25dp"
+                        android:text="Тухай"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/mapboxWhite"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:visibility="visible"
+                        tools:text="Санал" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/item4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+
+                        android:src="@drawable/baseline_feedback_black_18dp" />
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+
+                        android:layout_marginTop="25dp"
+                        android:text="Санал"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/mapboxWhite"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:visibility="visible"
+                        tools:text="Санал" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/item5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:src="@drawable/upoint1" />
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+
+                        android:layout_marginTop="25dp"
+                        android:text="U-POINT"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/mapboxWhite"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:visibility="visible"
+                        tools:text="Upoint апптай холбогдох" />
+                </FrameLayout>
+
+            </GridLayout>
+        </com.michaldrabik.tapbarmenulib.TapBarMenu>
+
+    </FrameLayout>
+</RelativeLayout>
